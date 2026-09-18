@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mirror — Personal Smart Mirror</title>
+<link rel="icon" href="icon.png" type="image/png">
+<style>
+	:root {
+		--bg: #ffffff; --text: #1d1d1f; --muted: #5f6368; --line: #e3e3e6; --accent: #b0467f;
+	}
+	@media (prefers-color-scheme: dark) {
+		:root { --bg: #0b0b0c; --text: #f2f3f5; --muted: #9aa0aa; --line: #2a2d33; --accent: #d183c9; }
+	}
+	* { box-sizing: border-box; }
+	body {
+		margin: 0; background: var(--bg); color: var(--text);
+		font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+		padding: 48px 16px 64px;
+	}
+	main { max-width: 680px; margin: 0 auto; }
+	header { display: flex; align-items: center; gap: 18px; margin-bottom: 28px; }
+	header img { width: 84px; height: 84px; border-radius: 20px; flex: none; }
+	h1 { font-size: 1.9rem; line-height: 1.2; margin: 0; letter-spacing: -0.02em; }
+	.tag { color: var(--muted); margin: 4px 0 0; }
+	h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+	p, li { margin: 0 0 12px; }
+	ul { padding-left: 1.2em; }
+	a { color: var(--accent); }
+	footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+	<header>
+		<img src="icon.png" alt="Mirror app icon: a doodle face with a camera badge">
+		<div>
+			<h1>Mirror</h1>
+			<p class="tag">A personal smart mirror</p>
+		</div>
+	</header>
+
+	<p>Mirror turns a two-way mirror in my home into a quiet display. By default it
+	shows the time, weather, markets, news and fitness stats; from my phone I can
+	switch it to other views.</p>
+
+	<h2>What it does with Pinterest</h2>
+	<p>One of those views is a slideshow of my own Pinterest boards. With my
+	permission, given through Pinterest's own sign-in screen, Mirror reads my
+	boards and the pins on them and shows the pictures on the mirror, one at a time.</p>
+	<ul>
+		<li><strong>Read-only.</strong> It never creates, edits, saves or deletes
+		boards or pins, and never posts anything.</li>
+		<li><strong>Just me.</strong> It's a personal project with a single user:
+		me. It isn't offered to anyone else.</li>
+		<li><strong>Stays at home.</strong> It runs on one computer in my home. Pin
+		data isn't stored elsewhere, shared, sold, or used for advertising.</li>
+	</ul>
+
+	<h2>More</h2>
+	<p><a href="../">Privacy policy</a> ·
+	<a href="https://github.com/qthinhp/mirror-privacy/issues">Contact</a></p>
+
+	<footer>Mirror is an independent personal project and is not affiliated with or endorsed by Pinterest.</footer>
+</main>
+</body>
+</html>
